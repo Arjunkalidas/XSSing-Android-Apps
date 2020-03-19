@@ -24,6 +24,7 @@ damaging effect on the website.
 The attacker will insert a script, containing malicious code into one of these input fields
 and the field will pass them as a string. Example of such strings are below:
 
+```
 <script>alert(document.cookie)</string>
 <IMG """><SCRIPT>alert("XSS")</SCRIPT>">
 print "<html>"
@@ -34,7 +35,7 @@ print "</html>"
 <h1> Most recent comment </h1>
 <script> executeAMaliciousCode(); </script>
 </html>
-
+```
 
 The script assumes that the contents consists of only text, but as you can see this can
 be included directly in the page and anyone visiting the page will receive the web page
